@@ -31,6 +31,7 @@
             this.btn_getImage = new System.Windows.Forms.Button();
             this.tbx_searchImage = new System.Windows.Forms.TextBox();
             this.pbx_searchedBook = new System.Windows.Forms.PictureBox();
+            this.lbl_url = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_searchedBook)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,11 +60,21 @@
             this.pbx_searchedBook.TabIndex = 2;
             this.pbx_searchedBook.TabStop = false;
             // 
+            // lbl_url
+            // 
+            this.lbl_url.AutoSize = true;
+            this.lbl_url.Location = new System.Drawing.Point(292, 101);
+            this.lbl_url.Name = "lbl_url";
+            this.lbl_url.Size = new System.Drawing.Size(21, 15);
+            this.lbl_url.TabIndex = 3;
+            this.lbl_url.Text = "url";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_url);
             this.Controls.Add(this.pbx_searchedBook);
             this.Controls.Add(this.tbx_searchImage);
             this.Controls.Add(this.btn_getImage);
@@ -80,5 +91,6 @@
         private Button btn_getImage;
         private TextBox tbx_searchImage;
         private PictureBox pbx_searchedBook;
+        private Label lbl_url;
     }
 }
